@@ -1,22 +1,22 @@
 # Optimization
 
-An AI should not only find the solution, but also find the optimal solution, by either maximizing the objective or minimizing the cost
+An AI should not only find the solution but also find the optimal solution, by either maximizing the objective or minimizing the cost
 
 ## Local Search
 
-Local search is a search algorithm that maintains a single node and searches by moving to a neighboring node, and determines whether to move to neighboring node based on if the neighbor node is better or worse
+Local search is a search algorithm that maintains a single node searches by moving to a neighboring node, and determines whether to move to the neighboring node based on whether the neighbor node is better or worse
 
 ### State Space Landscape
 
-In all the state space, there are better and worse results that are unevenly distributed, as the figure below illustrates. Optimization techniques allows agent to find the global optimum or global minimum based on the need of the problem
+In all the state space, there are better and worse results that are unevenly distributed, as the figure below illustrates. Optimization techniques allow the agent to find the global optimum or global minimum based on the need of the problem
 
 <img src="https://user-images.githubusercontent.com/99038613/176784545-bb4f5683-9d8d-47f5-8258-028fe8f6ab66.jpg" width=60% height=60%>
 
 ### Hill Climbing
 
-Hill climbing is one type of a local search algorithm. In this algorithm, the neighbor states are compared to the current state, and if any of them is better, we change the current node from the current state to that neighbor state
+Hill climbing is one type of local search algorithm. In this algorithm, the neighbor states are compared to the current state, and if any of them is better, we change the current node from the current state to that neighbor state
 
-- **Local and Global Minima and Maxima**: A local maximum (plural: maxima) is a state that has a higher value than its neighboring states. As opposed to that, a global maximum is a state that has the highest value of all states in the state-space
+- **Local and Global Minima and Maxima**: A local maximum (plural: maxima) is a state that has a higher value than its neighboring states. As opposed to that, a global maximum is a state that has the highest value of all states in the state space
 
     <img src="https://user-images.githubusercontent.com/99038613/176784640-b8d017a2-d617-4b45-b7b4-1b88def9bd8f.jpg">
 
@@ -28,11 +28,11 @@ Hill climbing is one type of a local search algorithm. In this algorithm, the ne
   - **First-choice**: Choose the first higher-valued neighbor
   - **Random-restart**: Conduct hill climbing multiple times
   - **Local Beam Search**: Chooses the k highest-valued neighbors
-- **Limitation**: Hill climbing only changes current state if neighboring state is better, but if we reached any local minima/maxmima, the neighboring states are all worse than the current state, thus stuck at that local point, then the algorithm will terminate which leaves us at a local, instead of a global optimum
+- **Limitation**: Hill climbing only changes the current state if a neighboring state is better, but if we reach any local minima/maxima, the neighboring states are all worse than the current state, thus stuck at that local point, then the algorithm will terminate which leaves us at a local, instead of a global optimum
 
 ### Random Start
 
-One way to get around this limitation is by choosing the start points randomly, and re-run the hill climbing algorithm multiple times, then record the result of each rum. Maybe some iterations of hill climb will result better than other hill climbs because the start point of those iterations are randomly choosed and are lucky enough to fall into the local region of the global optimum
+One way to get around this limitation is by choosing the start points randomly and re-running the hill climbing algorithm multiple times, then recording the result of each run. Maybe some iterations of hill climb will result better than other hill climbs because the start point of those iterations are randomly chosen and are lucky enough to fall into the local region of the global optimum
 
 ### [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing)
 
@@ -67,11 +67,11 @@ Linear programming is a family of problems that optimize a linear equation (an e
 
 ## Constraint Satisfaction Problem
 
-Constraint Satisfaction problems are a class of problems where variables need to be assigned values while satisfying some conditions. For example, the game of Sudoku, where each empty space is a variable that needs to be assigned value from 1 to 9
+Constraint Satisfaction problems are a class of problems where variables need to be assigned values while satisfying some conditions. For example, in the game of Sudoku, where each space is a variable that needs to be assigned a value from 1 to 9
 
 ### Unary & Binary Constraints
 
-Unary constraints are the limitations applying to a single variable such as a cannot be equal to 1. Binary constraints are the limitations applying to two variables such as the value of a cannot be equal to the value of b. In the game of Sudoku, the unary constraint is for each space, the value must be within 1 to 9. The binary constraint is that two variable/empty space, in the same row or column or each 3x3 block, cannot take on the same value
+Unary constraints are the limitations applying to a single variable such as a cannot be equal to 1. Binary constraints are the limitations applying to two variables such as the value of a cannot be equal to the value of b. In the game of Sudoku, the unary constraint is for each space, the value must be between 1 to 9. The binary constraint is that two variables, in the same row or column or each 3x3 block, cannot take on the same value
 
 ### Node Consistency
 
@@ -83,11 +83,11 @@ Arc consistency is when all the values in a variable’s domain satisfy the vari
 
 ### Backtracking Search
 
-Backtracking search is a type of a search algorithm that takes into account the structure of a constraint satisfaction search problem. It recursively assigns variables to certain values in their domains, if anything goes wrong it backtracks to the previous point and tries another value
+Backtracking search is a type of search algorithm that takes into account the structure of a constraint satisfaction search problem. It recursively assigns variables to certain values in their domains, if anything goes wrong it backtracks to the previous point and tries another value
 
-- **Inference**: Although backtracking search is more efficient than simple search, it still takes a lot of computational power. Enforcing arc consistency, on the other hand, is less resource intensive. By interleaving backtracking search with inference (enforcing arc consistency), we can get at a more efficient algorithm
+- **Inference**: Although a backtracking search is more efficient than a simple search, it still takes a lot of computational power. Enforcing arc consistency, on the other hand, is less resource-intensive. By interleaving backtracking search with inference (enforcing arc consistency), we can get at a more efficient algorithm
 
-- **Minimum Remaining Values (MRV)**: When choosing the next variable to try, the MRV heuristic says that we should let the variable that has the least number of values in its domain to try first since there's a higher chance to get the correct result
+- **Minimum Remaining Values (MRV)**: When choosing the next variable to try, the MRV heuristic says that we should let the variable that has the least number of values in its domain try first since there's a higher chance to get the correct result
 
 ```
 csp - Constraint Satisfaction Problem
@@ -116,7 +116,3 @@ function BackTrack(assignment, csp)
 
     return fail if the variable cannot take on any value
 ```
-
-## Examples
-
-Check out some [examples](examples/) that practice these theories
