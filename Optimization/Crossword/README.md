@@ -1,4 +1,4 @@
-# Crossword
+# Crossword 
 
 An AI that solves crossword puzzles using a given structure and word files
 
