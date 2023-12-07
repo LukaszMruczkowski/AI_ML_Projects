@@ -4,7 +4,7 @@ Instead of randomly taking actions and finding the optimal series of actions, wi
 
 ### [Knowledge-Based Agents](https://www.geeksforgeeks.org/knowledge-based-agents-in-ai/)
 
-Similar to the previous agent definition, but knowledge-based agents are agents that reason and infer by operating on internal representations of knowledge instead of taking actions under states
+Similar to the previous agent definition, knowledge-based agents are agents that reason and infer by operating on internal representations of knowledge instead of taking actions under states
 
 ### Sentence
 
@@ -20,18 +20,18 @@ Propositional symbols are used to represent an assertion in reality
 
 ### [Logical Connectives](https://en.wikipedia.org/wiki/Logical_connective)
 
-Logical connectives are logical symbols that connect propositional symbols in order to reason in a more complex way about the world
+Logical connectives are logical symbols that connect propositional symbols to reason in a more complex way about the world
 
 - **NOT (¬)**: Inverses the truth value of the proposition
-- **AND (∧)**: When two proposition, P and Q, are connected by ∧, the resulting proposition P ∧ Q is true only in the case that both P and Q are true
-- **OR (∨)**: True as as long as either of its arguments is true. This means that for P ∨ Q to be true, at least one of P or Q has to be true
+- **AND (∧)**: When two propositions, P and Q, are connected ∧, the resulting proposition P ∧ Q is true only in the case that both P and Q are true
+- **OR (∨)**: True as long as either of its arguments is true. This means that for P ∨ Q to be true, at least one of P or Q has to be true
 - **XOR (⊕)**: Exclusive OR, true if and only if one of P or Q is true
 - **Implication (→)**: Represents a structure of “if P then Q.”
 - **Biconditional (⇔)**: Implication that goes both directions
 
 ### Model
 
-Provides information about the world based on existing sentences which also known as the Knowledge Base (KB). Input a query about the world into the model, it will output its best result based on the KB
+Provides information about the world based on existing sentences which is also known as the Knowledge Base (KB). Input a query about the world into the model, it will output its best result based on the KB
 
 ### Knowledge Base (KB)
 
@@ -44,11 +44,11 @@ If α ⊨ β (α entails β), then in any possible world where α is true, then 
 - "Harry will go outside if it is raining"
 - "It is raining"
 
-Then the AI is able to make entailment stating that "Harry is outside" based on these two sentences
+Then the AI can make entailment stating that "Harry is outside" based on these two sentences
 
 ### Knowledge Engineering
 
-The process of figuring out how to represent propositions and logic using programming. For instance, in the `Knights` project, the `logic.py` is fully implemented already to represent propositional logics with Python
+The process of figuring out how to represent propositions and logic using programming. For instance, in the `Knights` project, the `logic.py` is fully implemented already to represent propositional logic with Python
 
 ## [Inference](https://en.wikipedia.org/wiki/Inference)
 
@@ -77,7 +77,7 @@ The process of deriving new sentences from old ones
 
 ### Knowledge and Search
 
-Inference can be viewed as a search problem. The initial state is the starting KB, the actions are inference rules and inferencing, the goal is a statement we are trying to prove
+Inference can be viewed as a search problem. The initial state is the starting KB, the actions are inference rules and inferencing, and the goal is a statement we are trying to prove
 
 ### Resolution
 
@@ -92,13 +92,13 @@ A power inference rule that states that if one of two atomic propositions in an 
 
 ## [First Order Logic](https://www.javatpoint.com/first-order-logic-in-artificial-intelligence)
 
-First order logic is another type of logic that allows us to express more complex ideas more succinctly than propositional logic. First order logic uses two types of symbols: Constant Symbols and Predicate Symbols. Constant symbols represent objects, while predicate symbols are like relations or functions that take an argument and return a true or false value
+First-order logic is another type of logic that allows us to express more complex ideas more succinctly than propositional logic. First-order logic uses two types of symbols: Constant Symbols and Predicate Symbols. Constant symbols represent objects, while predicate symbols are like relations or functions that take an argument and return a true or false value
 
-For example, we return to the logic puzzle with different people and house assignments at Hogwarts. The constant symbols are people or houses, like Minerva, Pomona, Gryffindor, Hufflepuff, etc. The predicate symbols are properties that hold true or false of some constant symbols. For example, we can express the idea that Minerva is a person using the sentence Person(Minerva). Similarly, we can express the idea the Gryffindor is a house using the sentence House(Gryffindor). All the logical connectives work in first order logic the same way as before. For example, ¬House(Minerva) expresses the idea that Minerva is not a house. A predicate symbol can also take two or more arguments and express a relation between them. For example, BelongsTo expresses a relation between two arguments, the person and the house to which the person belongs. Thus, the idea that Minerva belongs to Gryffindor can be expressed as BelongsTo(Minerva, Gryffindor). First order logic allows having one symbol for each person and one symbol for each house. This is more succinct than propositional logic, where each person—house assignment would require a different symbol
+For example, we return to the logic puzzle with different people and house assignments at Hogwarts. The constant symbols are people or houses, like Minerva, Pomona, Gryffindor, Hufflepuff, etc. The predicate symbols are properties that hold some constant symbols. For example, we can express the idea that Minerva is a person using the sentence Person(Minerva). Similarly, we can express the idea that Gryffindor is a house using the sentence House(Gryffindor). All the logical connectives work in first-order logic the same way as before. For example, ¬House(Minerva) expresses the idea that Minerva is not a house. A predicate symbol can also take two or more arguments and express a relation between them. For example, BelongsTo expresses a relation between two arguments, the person and the house to which the person belongs. Thus, the idea that Minerva belongs to Gryffindor can be expressed as BelongsTo(Minerva, Gryffindor). First-order logic allows having one symbol for each person and one symbol for each house. This is more succinct than propositional logic, where each person—house assignment would require a different symbol
 
 ### Universal Quantification
 
-Quantification is a tool that can be used in first order logic to represent sentences without using a specific constant symbol. Universal quantification uses the symbol ∀ to express “for all.” So, for example, the sentence ∀x. BelongsTo(x, Gryffindor) → ¬BelongsTo(x, Hufflepuff) expresses the idea that it is true for every symbol that if this symbol belongs to Gryffindor, it does not belong to Hufflepuff.
+Quantification is a tool that can be used in first-order logic to represent sentences without using a specific constant symbol. Universal quantification uses the symbol ∀ to express “for all.” So, for example, the sentence ∀x. BelongsTo(x, Gryffindor) → ¬BelongsTo(x, Hufflepuff) expresses the idea that it is true for every symbol that if this symbol belongs to Gryffindor, it does not belong to Hufflepuff.
 
 ### Existential Quantification
 
@@ -107,7 +107,3 @@ Existential quantification is an idea parallel to universal quantification. Howe
 Existential and universal quantification can be used in the same sentence. For example, the sentence ∀x. Person(x) → (∃y. House(y) ∧ BelongsTo(x, y)) expresses the idea that if x is a person, then there is at least one house, y, to which this person belongs. In other words, this sentence means that every person belongs to a house.
 
 There are other types of logic as well, and the commonality between them is that they all exist in pursuit of representing information. These are the systems we use to represent knowledge in our AI
-
-## Examples
-
-Check out some [examples](examples/) that practice these theories
