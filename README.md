@@ -23,7 +23,7 @@ Search problems involve an agent that is given an initial state and a goal state
 ### Projects
 
 - [Degrees](/Search/Degrees/)
-- [Tic-Tac-Toe](/Search/Tictactoe/)
+- [Tic-Tac-Toe](/Search/Tic-Tac-Toe/)
 
 ## Knowledge
 
@@ -39,7 +39,7 @@ Humans reason based on existing knowledge and conclude. The concept of represent
 
 - [Minesweeper](/Knowledge/Minesweeper/)
 
-## [Uncertainty](Uncertainty/)
+## [Probability](Probability/)
 
 AI can represent knowledge and from that, derive new knowledge. But in reality, usually, we don't have that much knowledge for certain. Most of the time AI can only have partial knowledge leaving some space for uncertainty. Still, we would want the AI to make the best possible decision during these situations
 
@@ -51,8 +51,8 @@ AI can represent knowledge and from that, derive new knowledge. But in reality, 
 
 ### Projects
 
-- [PageRank](Uncertainty/Pagerank/)
-- [Heredity](Uncertainty/Heredity/)
+- [PageRank](Probability/Pagerank/)
+- [Heredity](Probability/Heredity/)
 
 ## [Optimization](Optimization/)
 
