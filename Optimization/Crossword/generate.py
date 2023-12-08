@@ -61,7 +61,7 @@ class CrosswordCreator():
              self.crossword.height * cell_size),
             "black"
         )
-        font = ImageFont.truetype("assets/fonts/OpenSans-Regular.ttf", 80)
+        font = ImageFont.truetype("OpenSans-Regular.ttf", 80)
         draw = ImageDraw.Draw(img)
 
         for i in range(self.crossword.height):
@@ -336,7 +336,7 @@ class CrosswordCreator():
                 elif len(self.crossword.neighbors(variable)) == len(self.crossword.neighbors(max_degree_variable[0])):
                     max_degree_variable.append(variable)
 
-            # Return any of variable with highest degree
+            # Return any of variables with highest degree
             return max_degree_variable[0]
         
         # Else return one-element list
