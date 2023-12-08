@@ -22,8 +22,8 @@ Search problems involve an agent that is given an initial state and a goal state
 
 ### Projects
 
-- [Degrees](/Search/degrees/)
-- [Tic-Tac-Toe](/Search/tictactoe/)
+- [Degrees](/Search/Degrees/)
+- [Tic-Tac-Toe](/Search/Tictactoe/)
 
 ## Knowledge
 
@@ -37,12 +37,11 @@ Humans reason based on existing knowledge and conclude. The concept of represent
 
 ### Projects
 
-- [Knights](/Knowledge/knights/)
-- [Minesweeper](/Knowledge/minesweeper/)
+- [Minesweeper](/Knowledge/Minesweeper/)
 
 ## [Uncertainty](Uncertainty/)
 
-Last lecture shows how AI can represent knowledge and from that, derive new knowledge. But in reality, usually, we don't have that much knowledge for certain. Most of the time AI can only have partial knowledge leaving some space for uncertainty. Still, we would want the AI to make the best possible decision during these situations
+AI can represent knowledge and from that, derive new knowledge. But in reality, usually, we don't have that much knowledge for certain. Most of the time AI can only have partial knowledge leaving some space for uncertainty. Still, we would want the AI to make the best possible decision during these situations
 
 ### Objectives
 
@@ -52,8 +51,8 @@ Last lecture shows how AI can represent knowledge and from that, derive new know
 
 ### Projects
 
-- [PageRank](Uncertainty/pagerank/)
-- [Heredity](Uncertainty/heredity/)
+- [PageRank](Uncertainty/Pagerank/)
+- [Heredity](Uncertainty/Heredity/)
 
 ## [Optimization](Optimization/)
 
@@ -67,7 +66,7 @@ Optimization is choosing the best option from a set of possible options. We have
 
 ### Projects
 
-- [Crossword](Optimization/crossword/)
+- [Crossword](Optimization/Crossword/)
 
 ## [Learning](Learning/)
 
@@ -81,8 +80,8 @@ Machine learning provides a computer with data, rather than explicit instruction
 
 ### Projects
 
-- [Shopping](Learning/shopping/)
-- [Nim](Learning/nim/)
+- [Shopping](Learning/Shopping/)
+- [Nim](Learning/Nim/)
 
 ## [Neural Networks](Neural_Networks/)
 
@@ -96,4 +95,4 @@ AI neural networks are inspired by neuroscience. In the brain, neurons are cells
 
 ### Projects
 
-- [Traffic](Neural_Networks/traffic/)
+- [Traffic](Neural_Networks/Traffic/)
